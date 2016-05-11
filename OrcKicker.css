@@ -1,15 +1,20 @@
-img {
+* {
   image-rendering: pixelated;
+}
+
+#gui {
   width: auto;
-  height: auto;
+
+}
+@keyframes slidy {
+  0% {left: 0px;}
+  100% {left: -312px;}
 }
 
-#prairie {
-  animation-name: scroll;
-  animation-duration: 5sec;
+img {
+  display: none;
 }
 
-@keyframes scroll {
-  0% : {left: 0px;}
-  100% : {left: -200px;}
+.pointeur {
+     cursor:url("tronco.gif"), auto;
 }

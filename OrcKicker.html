@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html class="pointeur">
+
   <head>
     <title>Orc Kicker</title>
     <link type="text/css" rel="stylesheet" href="OrcKicker.css"/>
-    <script type="text/javascript" src="OrcKicker.js"></script>
   </head>
-  <body>
+
+  <body class="pointeur">
+    <script type="text/javascript" src="OrcKicker.js"></script>
+
     <img id="gui" src="gui.png"/><!-- background -->
 
-    <img  onClick="OrcClick()" id="prairie" src="prairie.png"> <!-- Taper l'orc -->
+    <audio id="sproutch" src="SWAV_1.wav"></audio>
+    <img id="prairie" onClick="OrcClick()" src="prairie.png" class="pointeur"/> <!-- Taper l'orc -->
 
-    <a onClick="ArmeClick()"> <!-- acheter l'arme -->
-      <img src=""/>
-    </a>
-
-    <script type="text/javascript"></script>
-
+    <!-- Affiche les infos -->
     <p>Organes: <a id="organes">0</a></p>
-    <p>Niveau: <a id="niveau">0</a></p>
+    <p>Niveau: <a id="niveau">1</a></p>
     <p>Exp_: <a id="exp_">0</a></p>
+
+    <div align="right" class="pointeur">
+      <audio id="buy" src="SWAV_2.wav"></audio>
+      <!--img OnClick="BuyClick()" class="pointeur" id="viet" src="viet_idle.png"/-->
+      </button>
+    </div>
+
   </body>
 </html>
