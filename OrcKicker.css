@@ -1,0 +1,15 @@
+img {
+  image-rendering: pixelated;
+  width: auto;
+  height: auto;
+}
+
+#prairie {
+  animation-name: scroll;
+  animation-duration: 5sec;
+}
+
+@keyframes scroll {
+  0% : {left: 0px;}
+  100% : {left: -200px;}
+}
